@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+.App {
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-page {
+  display: flex;
+  gap: 10px;
+  border: 1px solid black;
+  /* background-color: red; */
+}
+.login-info-container {
+  display: flex;
+}
+.login-sidebar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+
+  /* background-color: blueviolet; */
+}
+.login-sidebar > div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.login-sidebar > div:nth-child(2) {
+  border-top: 1px solid black;
+}
+.login-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.github-login-button {
+  /* background-color: bisque; */
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.login-main > form {
+  /* background-color: beige; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 10px;
+}
+.login-main > form > header {
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.login-main > form > label {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.login-main > form > button {
+  width: 100%;
+  background-color: green;
+  border: none;
+  margin-top: 10px;
+}
+.dashboard {
+  padding: 20px;
+  background-color: aqua;
+}
+
+.logout-button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: red;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .login-page {
+    flex-direction: column;
+  }
+}
